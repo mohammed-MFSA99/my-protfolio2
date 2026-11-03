@@ -1,10 +1,17 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
 
+@font-face {
+    font-family: "Cairo";
+    src: url("../fonts/Cairo-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
-    font-family: "Cairo","sans-serif";
+    font-family: "Cairo", sans-serif;
 }
 
 nav.navbar .navbar-nav li a.nav-link {
@@ -17,8 +24,8 @@ nav.navbar .navbar-nav li a.nav-link {
 }
 
 nav.navbar .navbar-nav li a.nav-link:hover,
-nav.navbar .navbar-nav li a.nav-link.active{
-    background-color: #fff ;
+nav.navbar .navbar-nav li a.nav-link.active {
+    background-color: #fff;
     color: #0575e6;
 }
 
@@ -32,7 +39,7 @@ nav.navbar.noTransparent .navbar-nav li a.nav-link {
 }
 
 nav.navbar.noTransparent .navbar-nav li a.nav-link:hover,
-nav.navbar.noTransparent .navbar-nav li a.nav-link.active{
+nav.navbar.noTransparent .navbar-nav li a.nav-link.active {
     color: #fff;
     background-color: #0575e6;
 }
@@ -47,7 +54,7 @@ header.header {
 }
 
 header.header .overlay {
-    background-color: rgba(5,117,230,0.9);
+    background-color: rgba(5, 117, 230, 0.9);
     color: #fff;
     padding: 40px 60px;
     border-radius: 5px;
@@ -59,6 +66,7 @@ header.header .personal img {
     margin-bottom: 20px;
     border-radius: 50%;
 }
+
 header.header .overlay h1 span {
     font-size: 24px;
 }
@@ -94,7 +102,7 @@ header.header .overlay a.cv {
     margin-bottom: 40px;
 }
 
-header.header .overlay .cv i{
+header.header .overlay .cv i {
     margin-left: 10px;
 }
 
@@ -103,6 +111,7 @@ section.licence {
     padding: 200px 0 80px;
     background-color: #f6fbff;
 }
+
 section.licence .licence-title {
     padding-bottom: 30px;
     position: relative;
@@ -231,35 +240,37 @@ section.statistics {
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    
+
 }
 
 section.statistics .overlay {
-    background-color: rgba(5,117,230,0.7);
+    background-color: rgba(5, 117, 230, 0.7);
     padding: 150px 0;
 }
 
-section.statistics .overlay .stat p{
+section.statistics .overlay .stat p {
     font-size: 24px;
     line-height: 30px;
     color: #fff;
     margin-top: 30px;
     font-family: sans-serif;
-} 
+}
 
 section.statistics .overlay .stat .circle canvas {
     background-color: #eef6ff;
     border-radius: 50%;
     padding: 10px;
 }
+
 section.statistics .overlay .stat .circle {
     position: relative;
 }
-section.statistics .overlay .stat .circle span{
+
+section.statistics .overlay .stat .circle span {
     position: absolute;
     top: 46%;
     right: 50%;
-    transform: translate(50%,-50%);
+    transform: translate(50%, -50%);
     font-size: 24px;
     color: #0575e6;
 }
@@ -278,7 +289,7 @@ section.gallery .gallery-title h2 {
     color: #0575e6;
 }
 
-section.gallery .gallery-work label{
+section.gallery .gallery-work label {
     font-size: 18px;
     line-height: 35px;
     color: #8f9899;
@@ -291,7 +302,7 @@ section.gallery .gallery-work label{
     transition: all .5s ease;
 }
 
-section.gallery .gallery-work label:hover{
+section.gallery .gallery-work label:hover {
     background-color: #0575e6;
     color: #fff;
     border: 2px solid #0575e6;
@@ -302,26 +313,26 @@ section.gallery .gallery-work .items .item {
     transition: all .5s ease;
 }
 
-section.gallery .gallery-work .items .item img{
+section.gallery .gallery-work .items .item img {
     width: 100%;
     height: 100%;
     border-radius: 3px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 section.gallery .gallery-work input.item-type-1:checked~.label-type-1,
 section.gallery .gallery-work input.item-type-2:checked~.label-type-2,
-section.gallery .gallery-work input.item-type-3:checked~.label-type-3, 
+section.gallery .gallery-work input.item-type-3:checked~.label-type-3,
 section.gallery .gallery-work input.item-type-all:checked~.label-type-all {
     color: #fff;
     background-color: #0575e6;
     border: 2px solid #0575e6;
 }
 
-section.gallery .gallery-work input.item-type-1:checked~ .items .item-type-1,
-section.gallery .gallery-work input.item-type-2:checked~ .items .item-type-2,
-section.gallery .gallery-work input.item-type-3:checked~ .items .item-type-3{
-   
+section.gallery .gallery-work input.item-type-1:checked~.items .item-type-1,
+section.gallery .gallery-work input.item-type-2:checked~.items .item-type-2,
+section.gallery .gallery-work input.item-type-3:checked~.items .item-type-3 {
+
     transform: scale(1.08);
     opacity: 1;
 }
@@ -329,8 +340,8 @@ section.gallery .gallery-work input.item-type-3:checked~ .items .item-type-3{
 
 section.gallery .gallery-work input.item-type-1:checked~.items .item:not(.item-type-1),
 section.gallery .gallery-work input.item-type-2:checked~.items .item:not(.item-type-2),
-section.gallery .gallery-work input.item-type-3:checked~.items .item:not(.item-type-3){
-    
+section.gallery .gallery-work input.item-type-3:checked~.items .item:not(.item-type-3) {
+
     transform: scale(0.8);
     opacity: 0.5;
 }
@@ -373,41 +384,41 @@ section.contacts .overlay .testimonials .slider .carousel-item .carousel-caption
 }
 
 section.contacts .overlay .testimonials .slider .carousel-item .carousel-caption img {
-   position: absolute;
-   top: 0;
-   transform: translate(50%,-50%);
-   
+    position: absolute;
+    top: 0;
+    transform: translate(50%, -50%);
+
 }
 
-section.contacts .overlay .testimonials .slider  .carousel-caption h4 {
+section.contacts .overlay .testimonials .slider .carousel-caption h4 {
     font-size: 18px;
     color: #555;
     margin-bottom: 15px;
 }
 
-section.contacts .overlay .testimonials .slider  .carousel-caption h4 span {
+section.contacts .overlay .testimonials .slider .carousel-caption h4 span {
     color: #9c9c9c;
     font-size: 16px;
 }
 
-section.contacts .overlay .testimonials .slider  .carousel-caption p {
+section.contacts .overlay .testimonials .slider .carousel-caption p {
     font-size: 15px;
     line-height: 22px;
     color: #b1b1b1;
     margin-bottom: 25px;
 }
 
-section.contacts .overlay .testimonials .slider  .carousel-caption li a {
+section.contacts .overlay .testimonials .slider .carousel-caption li a {
     color: #b2d8fe;
     font-size: 24px;
     transition: all .5s ease;
 }
 
-section.contacts .overlay .testimonials .slider  .carousel-caption li a:hover {
+section.contacts .overlay .testimonials .slider .carousel-caption li a:hover {
     color: #0575e6;
 }
 
-section.contacts .overlay .testimonials .slider .carousel .carousel-indicators{
+section.contacts .overlay .testimonials .slider .carousel .carousel-indicators {
     bottom: -5px;
 }
 
@@ -423,8 +434,8 @@ section.contacts .overlay .testimonials .slider .carousel .carousel-indicators b
     background-color: #0575e6;
 }
 
-section.contacts .overlay .testimonials  .carousel .carousel-control-prev i,
-section.contacts .overlay .testimonials  .carousel .carousel-control-next i {
+section.contacts .overlay .testimonials .carousel .carousel-control-prev i,
+section.contacts .overlay .testimonials .carousel .carousel-control-next i {
     padding: 13px 20px;
     background-color: #0575e6;
     border-radius: 50%;
@@ -436,14 +447,15 @@ section.contacts .overlay .testimonials  .carousel .carousel-control-next i {
     cursor: pointer;
 }
 
-section.contacts .overlay .testimonials  .carousel .carousel-control-prev{
+section.contacts .overlay .testimonials .carousel .carousel-control-prev {
     transform: translateX(50%);
 }
-section.contacts .overlay .testimonials  .carousel .carousel-control-next{
+
+section.contacts .overlay .testimonials .carousel .carousel-control-next {
     transform: translateX(-50%);
 }
 
-section.contacts .overlay .contact-info{
+section.contacts .overlay .contact-info {
     background-color: #fff;
     padding: 50px;
     border-radius: 5px;
@@ -459,7 +471,7 @@ section.contacts .overlay .contact-info .contact-title {
 section.contacts .overlay .contact-info .contact-form input,
 section.contacts .overlay .contact-info .contact-form textarea {
     border: 2px solid#f1f1f1;
-    border-radius: 3px ;
+    border-radius: 3px;
     margin-bottom: 20px;
     font-size: 18px;
     line-height: 35px;
@@ -469,11 +481,11 @@ section.contacts .overlay .contact-info .contact-form textarea {
     margin-bottom: 15px;
 }
 
-section.contacts .overlay .contact-info .contact-form .col-sm-6{
+section.contacts .overlay .contact-info .contact-form .col-sm-6 {
     position: relative;
 }
 
-section.contacts .overlay .contact-info .contact-form .col-sm-6::before{
+section.contacts .overlay .contact-info .contact-form .col-sm-6::before {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     position: absolute;
@@ -484,14 +496,16 @@ section.contacts .overlay .contact-info .contact-form .col-sm-6::before{
 }
 
 section.contacts .overlay .contact-info .contact-form .col-sm-6:first-child::before {
-    content: "\f007"; /* fa-user */
+    content: "\f007";
+    /* fa-user */
 }
 
 section.contacts .overlay .contact-info .contact-form .col-sm-6:nth-child(2)::before {
-    content: "\f0e0"; /* fa-envelope */
+    content: "\f0e0";
+    /* fa-envelope */
 }
 
-section.contacts .overlay .contact-info .contact-form button{
+section.contacts .overlay .contact-info .contact-form button {
     font-size: 24px;
     color: #0575e6;
     line-height: 25px;
@@ -505,12 +519,12 @@ section.contacts .overlay .contact-info .contact-form button{
     margin-right: 15px;
 }
 
-section.contacts .overlay .contact-info .contact-form button:hover{
+section.contacts .overlay .contact-info .contact-form button:hover {
     background-color: #0575e6;
     color: #fff;
 }
 
-section.contacts .overlay .contact-info ul.contact-us li{
+section.contacts .overlay .contact-info ul.contact-us li {
     font-size: 16px;
     line-height: 30px;
     color: #0575e6;
@@ -551,17 +565,17 @@ label.error {
         width: 90%;
     }
 
-    section.contacts .overlay .contact-info ul.social li a{
+    section.contacts .overlay .contact-info ul.social li a {
         margin-bottom: 5px;
     }
 }
 
-@media (max-width: 768px){
-    section.licence ul.timeline::before{
+@media (max-width: 768px) {
+    section.licence ul.timeline::before {
         height: 88%;
     }
 
-    section.licence ul.timeline li .timebox{
+    section.licence ul.timeline li .timebox {
         width: 90%;
         margin: auto;
     }
@@ -570,11 +584,11 @@ label.error {
         margin-bottom: 25px;
     }
 
-    section.licence ul.timeline li .timebox::after{
+    section.licence ul.timeline li .timebox::after {
         content: none;
     }
 
-    section.contacts .overlay .testimonials .slider .carousel-item .carousel-caption{
+    section.contacts .overlay .testimonials .slider .carousel-item .carousel-caption {
         padding: 54px 30px 25px;
     }
 
@@ -582,7 +596,8 @@ label.error {
         margin-bottom: 15px;
     }
 
-    section.contacts .overlay .testimonials .carousel .carousel-control-prev i, section.contacts .overlay .testimonials .carousel .carousel-control-next i{
+    section.contacts .overlay .testimonials .carousel .carousel-control-prev i,
+    section.contacts .overlay .testimonials .carousel .carousel-control-next i {
         display: none;
     }
 }
